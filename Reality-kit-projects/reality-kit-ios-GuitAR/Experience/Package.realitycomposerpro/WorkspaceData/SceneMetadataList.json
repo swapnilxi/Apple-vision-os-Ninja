@@ -1,0 +1,44 @@
+{
+  "7D633157-91BF-4887-A57A-8916F70CC1DD" : {
+    "objectMetadataList" : [
+      [
+        "7D633157-91BF-4887-A57A-8916F70CC1DD",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "7D633157-91BF-4887-A57A-8916F70CC1DD",
+        "Root",
+        "fender_stratocaster"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  },
+  "EAAEA4E2-1900-4586-A235-B5160E5E3E2D" : {
+    "objectMetadataList" : [
+      [
+        "EAAEA4E2-1900-4586-A235-B5160E5E3E2D",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "EAAEA4E2-1900-4586-A235-B5160E5E3E2D",
+        "Root",
+        "fender_stratocaster"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+#usda 1.0
+(
+    customLayerData = {
+        string creator = "Reality Composer Pro Version 2.0 (448.0.5.508.2)"
+    }
+    defaultPrim = "Root"
+    metersPerUnit = 1
+    upAxis = "Y"
+)
+
+def Xform "Root"
+{
+    reorder nameChildren = ["Bird", "SpatialAudio", "Bird_calls"]
+    def "Bird" (
+        active = true
+        references = @Bird.usdz@
+    )
+    {
+        reorder nameChildren = ["Bird_Call_2_wav", "Bird_Call_1_wav", "raven_msh1", "root_jnt", "Looks"]
+        quatf xformOp:orient = (1, 0, 0, 0)
+        float3 xformOp:scale = (0.018213913, 0.018213913, 0.018213913)
+        float3 xformOp:translate = (0, 0, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def Xform "SpatialAudio" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+        customData = {
+            float3 rotationEulerHint = (3.1415927, 0, 0)
+        }
+    )
+    {
+        rel material:binding = </Root/Bird/Looks/Raven_matSG> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        quatf xformOp:orient = (-4.371139e-8, 1, 0, 0)
+        float3 xformOp:translate = (0.0001379773, 0.002613239, 0.052705668)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+        def RealityKitComponent "SpatialAudio"
+        {
+            uniform token info:id = "RealityKit.SpatialAudio"
+        }
+    }
+
+    def RealityKitAudioFileGroup "Bird_calls"
+    {
+        reorder nameChildren = ["Bird_Call_1_wav", "Bird_Call_2_wav"]
+        def RealityKitAudioFile "Bird_Call_2_wav"
+        {
+            uniform asset file = @Bird_Call_2.wav@
+            uniform bool shouldLoop = 0
+        }
+
+        def RealityKitAudioFile "Bird_Call_1_wav"
+        {
+            uniform asset file = @Bird_Call_1.wav@
+            uniform bool shouldLoop = 0
+        }
+    }
+}
+
