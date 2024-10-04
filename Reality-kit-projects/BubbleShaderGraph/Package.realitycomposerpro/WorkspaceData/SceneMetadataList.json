@@ -4,17 +4,8 @@
       [
         "8C47FF41-384D-42EC-8E61-C47CF3D011FE",
         "Root",
-        "Bubble",
+        "Sphere",
         "BubbleMaterial"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "8C47FF41-384D-42EC-8E61-C47CF3D011FE",
-        "Root",
-        "Bubble"
       ],
       {
         "isExpanded" : true,
@@ -31,8 +22,17 @@
       [
         "8C47FF41-384D-42EC-8E61-C47CF3D011FE",
         "Root",
-        "Sphere",
+        "Bubble",
         "BubbleMaterial"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "8C47FF41-384D-42EC-8E61-C47CF3D011FE",
+        "Root",
+        "Bubble"
       ],
       {
         "isExpanded" : true,
