@@ -21,7 +21,7 @@ def Xform "Root"
         double radius = 0.1
         quatf xformOp:orient = (1, 0, 0, 0)
         float3 xformOp:scale = (1, 1, 1)
-        float3 xformOp:translate = (0.013062451, 0.050140753, 0)
+        float3 xformOp:translate = (-0.20519264, -0.11669186, -6.229773e-8)
         uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
 
         def Material "BubbleMaterial"
@@ -610,7 +610,7 @@ def Xform "Root"
         int ui:nodegraph:node:stackingOrder = 1
         quatf xformOp:orient = (1, 0, 0, 0)
         float3 xformOp:scale = (1.204038, 1.204038, 1.204038)
-        float3 xformOp:translate = (0.013062484, 0.041402962, 0.3419964)
+        float3 xformOp:translate = (-0.3094077, -0.13546197, 0.3419963)
         uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
 
         def Material "BubbleMaterial"
@@ -1199,7 +1199,7 @@ def Xform "Root"
         int ui:nodegraph:node:stackingOrder = 2
         quatf xformOp:orient = (1, 0, 0, 0)
         float3 xformOp:scale = (1.204038, 1.204038, 1.204038)
-        float3 xformOp:translate = (0.0130624855, 0.028228357, 0.7467766)
+        float3 xformOp:translate = (-0.34629613, -0.46803123, 0.40317553)
         uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
 
         def Material "BubbleMaterial"
@@ -2966,7 +2966,7 @@ def Xform "Root"
         int ui:nodegraph:node:stackingOrder = 3
         quatf xformOp:orient = (1, 0, 0, 0)
         float3 xformOp:scale = (1.204038, 1.204038, 1.204038)
-        float3 xformOp:translate = (0.013062349, -0.20379928, 0.9206451)
+        float3 xformOp:translate = (-0.5603509, -0.15259744, -0.015282244)
         uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
 
         def Material "BubbleMaterial"
