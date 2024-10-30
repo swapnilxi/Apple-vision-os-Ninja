@@ -1,0 +1,280 @@
+#usda 1.0
+(
+    customLayerData = {
+        string creator = "Reality Composer Pro Version 2.0 (448.0.5.508.2)"
+    }
+    defaultPrim = "Root"
+    metersPerUnit = 1
+    upAxis = "Y"
+)
+
+def Xform "Root"
+{
+    reorder nameChildren = ["Cricket_stadium", "Cricket_Ball_Sports", "Cricket_Bat", "Ball_move", "cricket_ball_hitting_bet_and_crowd_people_199962_mp3", "ballstart_mp3", "Bat_Move"]
+    def "Cricket_stadium" (
+        active = true
+        references = @Cricket_stadium.usdz@
+    )
+    {
+        float3 xformOp:scale = (0.01, 0.01, 0.01)
+        float3 xformOp:translate = (0, -1.2980927, 0.10627395)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def "Cricket_Ball_Sports" (
+        active = true
+        references = @Cricket_Ball_Sports.usdz@
+    )
+    {
+        float3 xformOp:scale = (0.01, 0.01, 0.01)
+        float3 xformOp:translate = (7.4831657, -0.86588836, 0.80482244)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+        def RealityKitComponent "AnimationLibrary"
+        {
+            uniform token info:id = "RealityKit.AnimationLibrary"
+        }
+
+        def RealityKitComponent "AudioLibrary"
+        {
+            uniform token info:id = "RealityKit.AudioLibrary"
+
+            def RealityKitDict "resources"
+            {
+                string[] keys = ["ballstart.mp3"]
+                rel values = </Root/ballstart_mp3>
+            }
+        }
+    }
+
+    def "Cricket_Bat" (
+        active = true
+        customData = {
+            float3 rotationEulerHint = (0.080437295, -0.13794263, -0.011084044)
+        }
+        references = @Cricket_Bat.usdz@
+    )
+    {
+        quatf xformOp:orient = (0.99681574, 0.039729968, -0.069082156, -0.0027534016)
+        float3 xformOp:scale = (0.007271974, 0.007271974, 0.007271974)
+        float3 xformOp:translate = (1.1721619, -0.9392078, -0.36037523)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def RealityKitTimeline "Ball_move"
+    {
+        reorder nameChildren = ["Track", "Track2", "Track3", "Track4", "Track5"]
+        uniform token info:id = "25FD909E-ADAF-4E5B-AC7B-CC60B03F8E0A"
+
+        def RealityKitTrack "Track"
+        {
+            uniform token info:id = "F3B1372F-6CC5-460E-9851-2E36CA9FDE73"
+        }
+
+        def RealityKitTrack "Track2"
+        {
+            uniform token info:id = "4C06759A-0085-460E-90D8-173FF307912A"
+
+            def RealityKitAction "Add_Force"
+            {
+                string actionKind = "impulse"
+                uniform token info:id = "9E197195-33B5-41BD-A581-52A0DA88A27C"
+                double startTime = 0.35834218057607087
+            }
+        }
+
+        def RealityKitTrack "Track3"
+        {
+            uniform token info:id = "FD238053-3B71-47B2-8DE0-AF7E32EB1FCF"
+
+            def RealityKitAction "Transform_To"
+            {
+                string actionKind = "moveTo"
+                int blendLayer = 300
+                double duration = 1
+                uniform token info:id = "9F895D12-0EF3-4D02-B54D-0615524C9F2D"
+                float3 position = (1.2791133, -0.8384869, -0.09915471)
+                quatf rotation = (1, 0, 0, 0)
+                float3 scale = (0.01, 0.01, 0.01)
+                double startTime = 0.5384076117060561
+                rel target = </Root/Cricket_Ball_Sports>
+
+                def RealityKitStruct "transformMode"
+                {
+                    rel referenceEntity = </Root>
+                    token type = "parent"
+                }
+
+                def RealityKitStruct "timingFunction"
+                {
+                }
+            }
+        }
+
+        def RealityKitTrack "Track4"
+        {
+            uniform token info:id = "DFF0E2E0-E6E0-42DE-88A3-24347B474F43"
+
+            def RealityKitAction "Play_Audio"
+            {
+                string actionKind = "audio"
+                string audioResourceName = "ballstart.mp3"
+                bool controlPlayback = 1
+                double duration = 0.792
+                uniform token info:id = "C0D40756-65AA-4FE5-8279-BD549CDA4262"
+                double startTime = 0.4531855843796158
+                rel target = </Root/Cricket_Ball_Sports>
+
+                def RealityKitStruct "handoffType"
+                {
+                }
+            }
+
+            def RealityKitAction "Bat_Move"
+            {
+                string actionKind = "timeline"
+                int blendLayer = 500
+                double duration = 1.2524002956209752
+                uniform token info:id = "D0F2D791-BB55-4181-B8A8-AFF335E43E08"
+                double startTime = 1.4593767309822747
+                rel timeline = </Root/Bat_Move>
+            }
+
+            def RealityKitAction "Transform_To"
+            {
+                string actionKind = "moveTo"
+                int blendLayer = 300
+                double duration = 1
+                uniform token info:id = "A70E77C2-4F6D-4220-A18B-402C99D52A8A"
+                float3 position = (5.1218348, 1.2190908, 1.8193896)
+                quatf rotation = (1, 0, 0, 0)
+                float3 scale = (0.01, 0.01, 0.01)
+                double startTime = 2.7117770267032504
+                rel target = </Root/Cricket_Ball_Sports>
+
+                def RealityKitStruct "transformMode"
+                {
+                    rel referenceEntity = </Root>
+                    token type = "parent"
+                }
+
+                def RealityKitStruct "timingFunction"
+                {
+                }
+            }
+        }
+
+        def RealityKitTrack "Track5"
+        {
+            uniform token info:id = "F7472A5A-F67D-4B0C-B61D-AEBF851EDF92"
+
+            def RealityKitAction "Play_Audio"
+            {
+                string actionKind = "audio"
+                string audioResourceName = "ballstart.mp3"
+                bool controlPlayback = 1
+                double duration = 0.792
+                uniform token info:id = "F8153309-B267-4BC7-B961-C277937F3360"
+                double startTime = 1.4790548932572611
+                rel target = </Root/Cricket_Ball_Sports>
+                float2 ui:nodegraph:node:pos = (20, 20)
+                int ui:nodegraph:node:stackingOrder = 1
+
+                def RealityKitStruct "handoffType"
+                {
+                }
+            }
+        }
+    }
+
+    def RealityKitAudioFile "cricket_ball_hitting_bet_and_crowd_people_199962_mp3"
+    {
+        uniform asset file = @cricket-ball-hitting-bet-and-crowd-people-199962.mp3@
+        uniform bool shouldLoop = 0
+    }
+
+    def RealityKitAudioFile "ballstart_mp3"
+    {
+        uniform asset file = @ballstart.mp3@
+        uniform bool shouldLoop = 0
+    }
+
+    def RealityKitTimeline "Bat_Move"
+    {
+        reorder nameChildren = ["Track", "Track2"]
+        uniform token info:id = "A92A8AE4-D58C-4E45-BBF8-4CE9B498EAC0"
+
+        def RealityKitTrack "Track"
+        {
+            uniform token info:id = "941E8942-F20C-445A-89EF-154F1A6B62E8"
+
+            def RealityKitAction "Transform_By"
+            {
+                string actionKind = "moveBy"
+                int blendLayer = 300
+                double duration = 1
+                uniform token info:id = "B177A173-C8E6-48F4-B596-072EF1FC32A1"
+                float3 position = (4.3764496, -0.5232086, 32.853474)
+                quatf rotation = (0.9548595, -0.06501392, -0.28940713, -0.016126504)
+                float3 scale = (1, 0.9, 1)
+                double startTime = 0
+                rel target = </Root/Cricket_Bat>
+
+                def RealityKitStruct "timingFunction"
+                {
+                }
+            }
+
+            def RealityKitAction "Spin"
+            {
+                string actionKind = "spin"
+                int blendLayer = 400
+                double duration = 0.2508741460487445
+                uniform token info:id = "A5807FBD-7EE8-46C4-877E-1E1EA25A030F"
+                float3 localAxis = (0, -0.5, 0)
+                float revolutions = -0.35
+                token spinDirection = "counterclockwise"
+                double startTime = 1.0015261495722307
+                rel target = </Root/Cricket_Bat>
+
+                def RealityKitStruct "timingFunction"
+                {
+                }
+            }
+        }
+
+        def RealityKitTrack "Track2"
+        {
+            uniform token info:id = "EF752FC2-AEDB-4CD3-8F3D-AF5BD718763A"
+        }
+    }
+
+    def "Idle_1_Male_Free_Animation_200_frames_loop__1_" (
+        active = true
+        customData = {
+            float3 rotationEulerHint = (0, 1.5707963, 0)
+        }
+        prepend references = @Idle_1_Male_Free_Animation_200_frames_loop (1).usdz@
+    )
+    {
+        quatf xformOp:orient = (0.70710677, 0, 0.70710677, 0)
+        float3 xformOp:scale = (0.05495152, 0.05495152, 0.05495152)
+        float3 xformOp:translate = (-3.7163177, -1.5026032, 0.44950396)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def "Spider_Man__Marvel_Rivals" (
+        active = true
+        customData = {
+            float3 rotationEulerHint = (-0.43672156, 7.937133, -0.43431544)
+        }
+        prepend references = @Spider_Man__Marvel_Rivals.usdz@
+    )
+    {
+        quatf xformOp:orient = (0.6798489, 0.011548942, 0.7331415, 0.013249033)
+        float3 xformOp:scale = (0.052528817, 0.052528813, 0.05252881)
+        float3 xformOp:translate = (-0.57597005, 0.3583163, 3.9979517)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+}
+

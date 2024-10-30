@@ -13,11 +13,27 @@ import BubbleShaderGraph
 struct ImmersiveView: View {
     @State var predicate = QueryPredicate<Entity>.has(ModelComponent.self)
     @State private var timer: Timer?
+    @State private var bubble = Entity()
     
     var body: some View {
         RealityView { content in
             if let immersiveContentEntity = try? await Entity(named: "BubbleScene", in: bubbleShaderGraphBundle) {
-                content.add(immersiveContentEntity)
+                guard let bubble = immersiveContentEntity.findEntity(named: "Bubble") else {
+                    // Handle the failure case, for example, log an error or return
+                    print("Error: Could not find entity named 'Bubble'")
+                    return
+                }
+                
+                for _ in 1...20 {
+                  var bubbleClone = bubble.clone(recursive: true)
+                    let x = Float.random(in: -1.5...1.5)
+                    let y = Float.random(in: -1.5...1.5)
+                    let z = Float.random(in: -1.5...1.5)
+                    
+                    bubbleClone.position = [x,y,z]
+                    content.add(bubbleClone)
+                }
+//                content.add(immersiveContentEntity)
                 // Put skybox here.  See example in World project available at
                 // https://developer.apple.com/
             }
