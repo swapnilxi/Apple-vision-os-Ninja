@@ -1,0 +1,520 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		151C2C012CD7F70C00E06011 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 151C2C002CD7F70C00E06011 /* RealityKitContent */; };
+		151C2C032CD7F70C00E06011 /* Dino_world_3DApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151C2C022CD7F70C00E06011 /* Dino_world_3DApp.swift */; };
+		151C2C0D2CD7F70D00E06011 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 151C2C0C2CD7F70D00E06011 /* Assets.xcassets */; };
+		151C2C102CD7F70D00E06011 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 151C2C0F2CD7F70D00E06011 /* Preview Assets.xcassets */; };
+		151C2C1B2CD7F70D00E06011 /* Dino_world_3DTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151C2C1A2CD7F70D00E06011 /* Dino_world_3DTests.swift */; };
+		151C2C272CD7F82200E06011 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151C2C262CD7F82200E06011 /* HomeView.swift */; };
+		151C2C292CD7F8D700E06011 /* DinoPortalCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151C2C282CD7F8D700E06011 /* DinoPortalCard.swift */; };
+		157CD00D2CDFE0F6004E225C /* TriceratopsVolumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157CD00C2CDFE0F6004E225C /* TriceratopsVolumeView.swift */; };
+		157CD0102CDFF8D9004E225C /* skybox2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 157CD00F2CDFF8D9004E225C /* skybox2.jpg */; };
+		157CD0112CDFF8D9004E225C /* skybox1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 157CD00E2CDFF8D9004E225C /* skybox1.jpg */; };
+		159851222CD8C58500C5F725 /* DinoCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159851212CD8C58500C5F725 /* DinoCardView.swift */; };
+		15C0F1152CDE27940081F431 /* VelociraptorVolumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C0F1142CDE27940081F431 /* VelociraptorVolumeView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		151C2C172CD7F70D00E06011 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 151C2BF32CD7F70B00E06011 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 151C2BFA2CD7F70C00E06011;
+			remoteInfo = "Dino-world-3D";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		151C2BFB2CD7F70C00E06011 /* Dino-world-3D.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dino-world-3D.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		151C2BFF2CD7F70C00E06011 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
+		151C2C022CD7F70C00E06011 /* Dino_world_3DApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dino_world_3DApp.swift; sourceTree = "<group>"; };
+		151C2C0C2CD7F70D00E06011 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		151C2C0F2CD7F70D00E06011 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		151C2C112CD7F70D00E06011 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		151C2C162CD7F70D00E06011 /* Dino-world-3DTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dino-world-3DTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		151C2C1A2CD7F70D00E06011 /* Dino_world_3DTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dino_world_3DTests.swift; sourceTree = "<group>"; };
+		151C2C262CD7F82200E06011 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		151C2C282CD7F8D700E06011 /* DinoPortalCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinoPortalCard.swift; sourceTree = "<group>"; };
+		157CD00C2CDFE0F6004E225C /* TriceratopsVolumeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriceratopsVolumeView.swift; sourceTree = "<group>"; };
+		157CD00E2CDFF8D9004E225C /* skybox1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = skybox1.jpg; sourceTree = "<group>"; };
+		157CD00F2CDFF8D9004E225C /* skybox2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = skybox2.jpg; sourceTree = "<group>"; };
+		159851212CD8C58500C5F725 /* DinoCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinoCardView.swift; sourceTree = "<group>"; };
+		15C0F1142CDE27940081F431 /* VelociraptorVolumeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VelociraptorVolumeView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		151C2BF82CD7F70C00E06011 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				151C2C012CD7F70C00E06011 /* RealityKitContent in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		151C2C132CD7F70D00E06011 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		151C2BF22CD7F70B00E06011 = {
+			isa = PBXGroup;
+			children = (
+				151C2BFD2CD7F70C00E06011 /* Dino-world-3D */,
+				151C2BFE2CD7F70C00E06011 /* Packages */,
+				151C2C192CD7F70D00E06011 /* Dino-world-3DTests */,
+				151C2BFC2CD7F70C00E06011 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		151C2BFC2CD7F70C00E06011 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				151C2BFB2CD7F70C00E06011 /* Dino-world-3D.app */,
+				151C2C162CD7F70D00E06011 /* Dino-world-3DTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		151C2BFD2CD7F70C00E06011 /* Dino-world-3D */ = {
+			isa = PBXGroup;
+			children = (
+				157CD00E2CDFF8D9004E225C /* skybox1.jpg */,
+				157CD00F2CDFF8D9004E225C /* skybox2.jpg */,
+				151C2C022CD7F70C00E06011 /* Dino_world_3DApp.swift */,
+				151C2C0C2CD7F70D00E06011 /* Assets.xcassets */,
+				151C2C112CD7F70D00E06011 /* Info.plist */,
+				151C2C0E2CD7F70D00E06011 /* Preview Content */,
+				151C2C2A2CD7F8F900E06011 /* Views */,
+			);
+			path = "Dino-world-3D";
+			sourceTree = "<group>";
+		};
+		151C2BFE2CD7F70C00E06011 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				151C2BFF2CD7F70C00E06011 /* RealityKitContent */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		151C2C0E2CD7F70D00E06011 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				151C2C0F2CD7F70D00E06011 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		151C2C192CD7F70D00E06011 /* Dino-world-3DTests */ = {
+			isa = PBXGroup;
+			children = (
+				151C2C1A2CD7F70D00E06011 /* Dino_world_3DTests.swift */,
+			);
+			path = "Dino-world-3DTests";
+			sourceTree = "<group>";
+		};
+		151C2C2A2CD7F8F900E06011 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				151C2C262CD7F82200E06011 /* HomeView.swift */,
+				151C2C282CD7F8D700E06011 /* DinoPortalCard.swift */,
+				159851212CD8C58500C5F725 /* DinoCardView.swift */,
+				15C0F1142CDE27940081F431 /* VelociraptorVolumeView.swift */,
+				157CD00C2CDFE0F6004E225C /* TriceratopsVolumeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		151C2BFA2CD7F70C00E06011 /* Dino-world-3D */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 151C2C1E2CD7F70D00E06011 /* Build configuration list for PBXNativeTarget "Dino-world-3D" */;
+			buildPhases = (
+				151C2BF72CD7F70C00E06011 /* Sources */,
+				151C2BF82CD7F70C00E06011 /* Frameworks */,
+				151C2BF92CD7F70C00E06011 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Dino-world-3D";
+			packageProductDependencies = (
+				151C2C002CD7F70C00E06011 /* RealityKitContent */,
+			);
+			productName = "Dino-world-3D";
+			productReference = 151C2BFB2CD7F70C00E06011 /* Dino-world-3D.app */;
+			productType = "com.apple.product-type.application";
+		};
+		151C2C152CD7F70D00E06011 /* Dino-world-3DTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 151C2C212CD7F70D00E06011 /* Build configuration list for PBXNativeTarget "Dino-world-3DTests" */;
+			buildPhases = (
+				151C2C122CD7F70D00E06011 /* Sources */,
+				151C2C132CD7F70D00E06011 /* Frameworks */,
+				151C2C142CD7F70D00E06011 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				151C2C182CD7F70D00E06011 /* PBXTargetDependency */,
+			);
+			name = "Dino-world-3DTests";
+			productName = "Dino-world-3DTests";
+			productReference = 151C2C162CD7F70D00E06011 /* Dino-world-3DTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		151C2BF32CD7F70B00E06011 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					151C2BFA2CD7F70C00E06011 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					151C2C152CD7F70D00E06011 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 151C2BFA2CD7F70C00E06011;
+					};
+				};
+			};
+			buildConfigurationList = 151C2BF62CD7F70B00E06011 /* Build configuration list for PBXProject "Dino-world-3D" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 151C2BF22CD7F70B00E06011;
+			productRefGroup = 151C2BFC2CD7F70C00E06011 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				151C2BFA2CD7F70C00E06011 /* Dino-world-3D */,
+				151C2C152CD7F70D00E06011 /* Dino-world-3DTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		151C2BF92CD7F70C00E06011 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				151C2C102CD7F70D00E06011 /* Preview Assets.xcassets in Resources */,
+				157CD0102CDFF8D9004E225C /* skybox2.jpg in Resources */,
+				157CD0112CDFF8D9004E225C /* skybox1.jpg in Resources */,
+				151C2C0D2CD7F70D00E06011 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		151C2C142CD7F70D00E06011 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		151C2BF72CD7F70C00E06011 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				151C2C292CD7F8D700E06011 /* DinoPortalCard.swift in Sources */,
+				159851222CD8C58500C5F725 /* DinoCardView.swift in Sources */,
+				151C2C272CD7F82200E06011 /* HomeView.swift in Sources */,
+				151C2C032CD7F70C00E06011 /* Dino_world_3DApp.swift in Sources */,
+				15C0F1152CDE27940081F431 /* VelociraptorVolumeView.swift in Sources */,
+				157CD00D2CDFE0F6004E225C /* TriceratopsVolumeView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		151C2C122CD7F70D00E06011 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				151C2C1B2CD7F70D00E06011 /* Dino_world_3DTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		151C2C182CD7F70D00E06011 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 151C2BFA2CD7F70C00E06011 /* Dino-world-3D */;
+			targetProxy = 151C2C172CD7F70D00E06011 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		151C2C1C2CD7F70D00E06011 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = xros;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				XROS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		151C2C1D2CD7F70D00E06011 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = xros;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				XROS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		151C2C1F2CD7F70D00E06011 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Dino-world-3D/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.swapnilxi.Dino-world-3D";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 7;
+			};
+			name = Debug;
+		};
+		151C2C202CD7F70D00E06011 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Dino-world-3D/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.swapnilxi.Dino-world-3D";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 7;
+			};
+			name = Release;
+		};
+		151C2C222CD7F70D00E06011 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.swapnilxi.Dino-world-3DTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 7;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dino-world-3D.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Dino-world-3D";
+				XROS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		151C2C232CD7F70D00E06011 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.swapnilxi.Dino-world-3DTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 7;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dino-world-3D.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Dino-world-3D";
+				XROS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		151C2BF62CD7F70B00E06011 /* Build configuration list for PBXProject "Dino-world-3D" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				151C2C1C2CD7F70D00E06011 /* Debug */,
+				151C2C1D2CD7F70D00E06011 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		151C2C1E2CD7F70D00E06011 /* Build configuration list for PBXNativeTarget "Dino-world-3D" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				151C2C1F2CD7F70D00E06011 /* Debug */,
+				151C2C202CD7F70D00E06011 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		151C2C212CD7F70D00E06011 /* Build configuration list for PBXNativeTarget "Dino-world-3DTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				151C2C222CD7F70D00E06011 /* Debug */,
+				151C2C232CD7F70D00E06011 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		151C2C002CD7F70C00E06011 /* RealityKitContent */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RealityKitContent;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 151C2BF32CD7F70B00E06011 /* Project object */;
+}
