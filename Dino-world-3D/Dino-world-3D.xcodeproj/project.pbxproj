@@ -14,9 +14,14 @@
 		151C2C1B2CD7F70D00E06011 /* Dino_world_3DTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151C2C1A2CD7F70D00E06011 /* Dino_world_3DTests.swift */; };
 		151C2C272CD7F82200E06011 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151C2C262CD7F82200E06011 /* HomeView.swift */; };
 		151C2C292CD7F8D700E06011 /* DinoPortalCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151C2C282CD7F8D700E06011 /* DinoPortalCard.swift */; };
+		156EF7912CF4EF1900065221 /* HeadsetPositionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156EF7902CF4EF1900065221 /* HeadsetPositionManager.swift */; };
+		156EF7932CF4F71B00065221 /* Entity + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156EF7922CF4F71B00065221 /* Entity + Extension.swift */; };
+		157313A32CE5269E003FB25B /* ImmersiveAnimatedStegosaurusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157313A22CE5269E003FB25B /* ImmersiveAnimatedStegosaurusView.swift */; };
 		157CD00D2CDFE0F6004E225C /* TriceratopsVolumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157CD00C2CDFE0F6004E225C /* TriceratopsVolumeView.swift */; };
 		157CD0102CDFF8D9004E225C /* skybox2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 157CD00F2CDFF8D9004E225C /* skybox2.jpg */; };
 		157CD0112CDFF8D9004E225C /* skybox1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 157CD00E2CDFF8D9004E225C /* skybox1.jpg */; };
+		1580C9BB2CF394EB0020D53F /* FindADinoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1580C9BA2CF394EB0020D53F /* FindADinoView.swift */; };
+		15889F1D2CE7D4E100ABECCA /* ImmersiveStegosaurusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15889F1C2CE7D4E100ABECCA /* ImmersiveStegosaurusView.swift */; };
 		159851222CD8C58500C5F725 /* DinoCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159851212CD8C58500C5F725 /* DinoCardView.swift */; };
 		15C0F1152CDE27940081F431 /* VelociraptorVolumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C0F1142CDE27940081F431 /* VelociraptorVolumeView.swift */; };
 /* End PBXBuildFile section */
@@ -42,9 +47,14 @@
 		151C2C1A2CD7F70D00E06011 /* Dino_world_3DTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dino_world_3DTests.swift; sourceTree = "<group>"; };
 		151C2C262CD7F82200E06011 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		151C2C282CD7F8D700E06011 /* DinoPortalCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinoPortalCard.swift; sourceTree = "<group>"; };
+		156EF7902CF4EF1900065221 /* HeadsetPositionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadsetPositionManager.swift; sourceTree = "<group>"; };
+		156EF7922CF4F71B00065221 /* Entity + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entity + Extension.swift"; sourceTree = "<group>"; };
+		157313A22CE5269E003FB25B /* ImmersiveAnimatedStegosaurusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveAnimatedStegosaurusView.swift; sourceTree = "<group>"; };
 		157CD00C2CDFE0F6004E225C /* TriceratopsVolumeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriceratopsVolumeView.swift; sourceTree = "<group>"; };
 		157CD00E2CDFF8D9004E225C /* skybox1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = skybox1.jpg; sourceTree = "<group>"; };
 		157CD00F2CDFF8D9004E225C /* skybox2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = skybox2.jpg; sourceTree = "<group>"; };
+		1580C9BA2CF394EB0020D53F /* FindADinoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindADinoView.swift; sourceTree = "<group>"; };
+		15889F1C2CE7D4E100ABECCA /* ImmersiveStegosaurusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveStegosaurusView.swift; sourceTree = "<group>"; };
 		159851212CD8C58500C5F725 /* DinoCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinoCardView.swift; sourceTree = "<group>"; };
 		15C0F1142CDE27940081F431 /* VelociraptorVolumeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VelociraptorVolumeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,10 +103,12 @@
 				157CD00E2CDFF8D9004E225C /* skybox1.jpg */,
 				157CD00F2CDFF8D9004E225C /* skybox2.jpg */,
 				151C2C022CD7F70C00E06011 /* Dino_world_3DApp.swift */,
+				156EF7902CF4EF1900065221 /* HeadsetPositionManager.swift */,
 				151C2C0C2CD7F70D00E06011 /* Assets.xcassets */,
 				151C2C112CD7F70D00E06011 /* Info.plist */,
 				151C2C0E2CD7F70D00E06011 /* Preview Content */,
 				151C2C2A2CD7F8F900E06011 /* Views */,
+				156EF7922CF4F71B00065221 /* Entity + Extension.swift */,
 			);
 			path = "Dino-world-3D";
 			sourceTree = "<group>";
@@ -133,6 +145,9 @@
 				159851212CD8C58500C5F725 /* DinoCardView.swift */,
 				15C0F1142CDE27940081F431 /* VelociraptorVolumeView.swift */,
 				157CD00C2CDFE0F6004E225C /* TriceratopsVolumeView.swift */,
+				157313A22CE5269E003FB25B /* ImmersiveAnimatedStegosaurusView.swift */,
+				15889F1C2CE7D4E100ABECCA /* ImmersiveStegosaurusView.swift */,
+				1580C9BA2CF394EB0020D53F /* FindADinoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -242,7 +257,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				156EF7932CF4F71B00065221 /* Entity + Extension.swift in Sources */,
+				1580C9BB2CF394EB0020D53F /* FindADinoView.swift in Sources */,
+				156EF7912CF4EF1900065221 /* HeadsetPositionManager.swift in Sources */,
+				157313A32CE5269E003FB25B /* ImmersiveAnimatedStegosaurusView.swift in Sources */,
 				151C2C292CD7F8D700E06011 /* DinoPortalCard.swift in Sources */,
+				15889F1D2CE7D4E100ABECCA /* ImmersiveStegosaurusView.swift in Sources */,
 				159851222CD8C58500C5F725 /* DinoCardView.swift in Sources */,
 				151C2C272CD7F82200E06011 /* HomeView.swift in Sources */,
 				151C2C032CD7F70C00E06011 /* Dino_world_3DApp.swift in Sources */,
