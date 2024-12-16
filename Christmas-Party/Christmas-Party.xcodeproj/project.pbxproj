@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		15F98D952D04D9E300EDB8E1 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 15F98D942D04D9E300EDB8E1 /* RealityKitContent */; };
+		15F98D972D04D9E300EDB8E1 /* Christmas_PartyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F98D962D04D9E300EDB8E1 /* Christmas_PartyApp.swift */; };
+		15F98D992D04D9E300EDB8E1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F98D982D04D9E300EDB8E1 /* ContentView.swift */; };
+		15F98D9B2D04D9E300EDB8E1 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F98D9A2D04D9E300EDB8E1 /* AppModel.swift */; };
+		15F98D9D2D04D9E300EDB8E1 /* ToggleImmersiveSpaceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F98D9C2D04D9E300EDB8E1 /* ToggleImmersiveSpaceButton.swift */; };
+		15F98D9F2D04D9E300EDB8E1 /* ImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F98D9E2D04D9E300EDB8E1 /* ImmersiveView.swift */; };
+		15F98DA12D04D9E500EDB8E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15F98DA02D04D9E500EDB8E1 /* Assets.xcassets */; };
+		15F98DA42D04D9E500EDB8E1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15F98DA32D04D9E500EDB8E1 /* Preview Assets.xcassets */; };
+		15F98DAF2D04D9E500EDB8E1 /* Christmas_PartyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F98DAE2D04D9E500EDB8E1 /* Christmas_PartyTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		15F98DAB2D04D9E500EDB8E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15F98D872D04D9E300EDB8E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15F98D8E2D04D9E300EDB8E1;
+			remoteInfo = "Christmas-Party";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		15F98D8F2D04D9E300EDB8E1 /* Christmas-Party.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Christmas-Party.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		15F98D932D04D9E300EDB8E1 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
+		15F98D962D04D9E300EDB8E1 /* Christmas_PartyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Christmas_PartyApp.swift; sourceTree = "<group>"; };
+		15F98D982D04D9E300EDB8E1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		15F98D9A2D04D9E300EDB8E1 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		15F98D9C2D04D9E300EDB8E1 /* ToggleImmersiveSpaceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleImmersiveSpaceButton.swift; sourceTree = "<group>"; };
+		15F98D9E2D04D9E300EDB8E1 /* ImmersiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveView.swift; sourceTree = "<group>"; };
+		15F98DA02D04D9E500EDB8E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		15F98DA32D04D9E500EDB8E1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		15F98DA52D04D9E500EDB8E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15F98DAA2D04D9E500EDB8E1 /* Christmas-PartyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Christmas-PartyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		15F98DAE2D04D9E500EDB8E1 /* Christmas_PartyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Christmas_PartyTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		15F98D8C2D04D9E300EDB8E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15F98D952D04D9E300EDB8E1 /* RealityKitContent in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15F98DA72D04D9E500EDB8E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15F98D862D04D9E300EDB8E1 = {
+			isa = PBXGroup;
+			children = (
+				15F98D912D04D9E300EDB8E1 /* Christmas-Party */,
+				15F98D922D04D9E300EDB8E1 /* Packages */,
+				15F98DAD2D04D9E500EDB8E1 /* Christmas-PartyTests */,
+				15F98D902D04D9E300EDB8E1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		15F98D902D04D9E300EDB8E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				15F98D8F2D04D9E300EDB8E1 /* Christmas-Party.app */,
+				15F98DAA2D04D9E500EDB8E1 /* Christmas-PartyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		15F98D912D04D9E300EDB8E1 /* Christmas-Party */ = {
+			isa = PBXGroup;
+			children = (
+				15F98D962D04D9E300EDB8E1 /* Christmas_PartyApp.swift */,
+				15F98D982D04D9E300EDB8E1 /* ContentView.swift */,
+				15F98D9A2D04D9E300EDB8E1 /* AppModel.swift */,
+				15F98D9C2D04D9E300EDB8E1 /* ToggleImmersiveSpaceButton.swift */,
+				15F98D9E2D04D9E300EDB8E1 /* ImmersiveView.swift */,
+				15F98DA02D04D9E500EDB8E1 /* Assets.xcassets */,
+				15F98DA52D04D9E500EDB8E1 /* Info.plist */,
+				15F98DA22D04D9E500EDB8E1 /* Preview Content */,
+			);
+			path = "Christmas-Party";
+			sourceTree = "<group>";
+		};
+		15F98D922D04D9E300EDB8E1 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				15F98D932D04D9E300EDB8E1 /* RealityKitContent */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		15F98DA22D04D9E500EDB8E1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				15F98DA32D04D9E500EDB8E1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		15F98DAD2D04D9E500EDB8E1 /* Christmas-PartyTests */ = {
+			isa = PBXGroup;
+			children = (
+				15F98DAE2D04D9E500EDB8E1 /* Christmas_PartyTests.swift */,
+			);
+			path = "Christmas-PartyTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		15F98D8E2D04D9E300EDB8E1 /* Christmas-Party */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15F98DB22D04D9E500EDB8E1 /* Build configuration list for PBXNativeTarget "Christmas-Party" */;
+			buildPhases = (
+				15F98D8B2D04D9E300EDB8E1 /* Sources */,
+				15F98D8C2D04D9E300EDB8E1 /* Frameworks */,
+				15F98D8D2D04D9E300EDB8E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Christmas-Party";
+			packageProductDependencies = (
+				15F98D942D04D9E300EDB8E1 /* RealityKitContent */,
+			);
+			productName = "Christmas-Party";
+			productReference = 15F98D8F2D04D9E300EDB8E1 /* Christmas-Party.app */;
+			productType = "com.apple.product-type.application";
+		};
+		15F98DA92D04D9E500EDB8E1 /* Christmas-PartyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15F98DB52D04D9E500EDB8E1 /* Build configuration list for PBXNativeTarget "Christmas-PartyTests" */;
+			buildPhases = (
+				15F98DA62D04D9E500EDB8E1 /* Sources */,
+				15F98DA72D04D9E500EDB8E1 /* Frameworks */,
+				15F98DA82D04D9E500EDB8E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15F98DAC2D04D9E500EDB8E1 /* PBXTargetDependency */,
+			);
+			name = "Christmas-PartyTests";
+			productName = "Christmas-PartyTests";
+			productReference = 15F98DAA2D04D9E500EDB8E1 /* Christmas-PartyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		15F98D872D04D9E300EDB8E1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					15F98D8E2D04D9E300EDB8E1 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					15F98DA92D04D9E500EDB8E1 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 15F98D8E2D04D9E300EDB8E1;
+					};
+				};
+			};
+			buildConfigurationList = 15F98D8A2D04D9E300EDB8E1 /* Build configuration list for PBXProject "Christmas-Party" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 15F98D862D04D9E300EDB8E1;
+			productRefGroup = 15F98D902D04D9E300EDB8E1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				15F98D8E2D04D9E300EDB8E1 /* Christmas-Party */,
+				15F98DA92D04D9E500EDB8E1 /* Christmas-PartyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		15F98D8D2D04D9E300EDB8E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15F98DA42D04D9E500EDB8E1 /* Preview Assets.xcassets in Resources */,
+				15F98DA12D04D9E500EDB8E1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15F98DA82D04D9E500EDB8E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		15F98D8B2D04D9E300EDB8E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15F98D9D2D04D9E300EDB8E1 /* ToggleImmersiveSpaceButton.swift in Sources */,
+				15F98D992D04D9E300EDB8E1 /* ContentView.swift in Sources */,
+				15F98D9F2D04D9E300EDB8E1 /* ImmersiveView.swift in Sources */,
+				15F98D9B2D04D9E300EDB8E1 /* AppModel.swift in Sources */,
+				15F98D972D04D9E300EDB8E1 /* Christmas_PartyApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15F98DA62D04D9E500EDB8E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15F98DAF2D04D9E500EDB8E1 /* Christmas_PartyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		15F98DAC2D04D9E500EDB8E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15F98D8E2D04D9E300EDB8E1 /* Christmas-Party */;
+			targetProxy = 15F98DAB2D04D9E500EDB8E1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		15F98DB02D04D9E500EDB8E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = xros;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				XROS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		15F98DB12D04D9E500EDB8E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = xros;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				XROS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		15F98DB32D04D9E500EDB8E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Christmas-Party/Preview Content\"";
+				DEVELOPMENT_TEAM = 6QYSZ84YQB;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.swapnilxi.Christmas-Party";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 7;
+				XROS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		15F98DB42D04D9E500EDB8E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Christmas-Party/Preview Content\"";
+				DEVELOPMENT_TEAM = 6QYSZ84YQB;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.swapnilxi.Christmas-Party";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 7;
+				XROS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		15F98DB62D04D9E500EDB8E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.swapnilxi.Christmas-PartyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 7;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Christmas-Party.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Christmas-Party";
+				XROS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		15F98DB72D04D9E500EDB8E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.swapnilxi.Christmas-PartyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 7;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Christmas-Party.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Christmas-Party";
+				XROS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		15F98D8A2D04D9E300EDB8E1 /* Build configuration list for PBXProject "Christmas-Party" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15F98DB02D04D9E500EDB8E1 /* Debug */,
+				15F98DB12D04D9E500EDB8E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15F98DB22D04D9E500EDB8E1 /* Build configuration list for PBXNativeTarget "Christmas-Party" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15F98DB32D04D9E500EDB8E1 /* Debug */,
+				15F98DB42D04D9E500EDB8E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15F98DB52D04D9E500EDB8E1 /* Build configuration list for PBXNativeTarget "Christmas-PartyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15F98DB62D04D9E500EDB8E1 /* Debug */,
+				15F98DB72D04D9E500EDB8E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		15F98D942D04D9E300EDB8E1 /* RealityKitContent */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RealityKitContent;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 15F98D872D04D9E300EDB8E1 /* Project object */;
+}
