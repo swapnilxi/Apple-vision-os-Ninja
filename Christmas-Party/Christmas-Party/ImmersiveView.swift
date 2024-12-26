@@ -19,15 +19,7 @@ struct ImmersiveView: View {
 
                 // Put skybox here.  See example in World project available at
                 // https://developer.apple.com/
-					if let christmasHouseEntity = try? Entity.loadModel(named: "christmasHouse") {
-						// Add the Christmas house entity to the scene
-						immersiveContentEntity.addChild(christmasHouseEntity)
-						
-						// Adjust the position, scale, and orientation of the Christmas house entity if needed
-						christmasHouseEntity.position = SIMD3<Float>(0, 0, 0) // Example position
-						christmasHouseEntity.scale = SIMD3<Float>(1, 1, 1) // Example scale
-						christmasHouseEntity.orientation = simd_quatf(angle: Float.pi, axis: SIMD3<Float>(0, 1, 0)) // Example orientation
-					}
+					
 					
 					let sphere = MeshResource.generateSphere(radius: 5.0)
 

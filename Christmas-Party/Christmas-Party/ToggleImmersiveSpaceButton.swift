@@ -15,6 +15,7 @@ struct ToggleImmersiveSpaceButton: View {
     @Environment(\.openImmersiveSpace) private var openImmersiveSpace
 
     var body: some View {
+		 VStack{
         Button {
             Task { @MainActor in
                 switch appModel.immersiveSpaceState {
@@ -55,4 +56,10 @@ struct ToggleImmersiveSpaceButton: View {
         .animation(.none, value: 0)
         .fontWeight(.semibold)
     }
+	Button("Open christmas party") {
+						Task {
+							 await openImmersiveSpace(id: "SkyboxView")
+						}
+				  }
+	 }
 }

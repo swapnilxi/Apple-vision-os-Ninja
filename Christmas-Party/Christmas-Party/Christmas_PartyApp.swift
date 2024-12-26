@@ -18,6 +18,10 @@ struct Christmas_PartyApp: App {
                 .environment(appModel)
         }
         .windowStyle(.volumetric)
+		 
+		 ImmersiveSpace(id: "SkyboxView" ){
+			 SkyboxView()
+		 }
 
         ImmersiveSpace(id: appModel.immersiveSpaceID) {
             ImmersiveView()
