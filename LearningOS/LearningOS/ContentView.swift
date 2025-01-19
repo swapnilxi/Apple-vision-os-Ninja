@@ -12,15 +12,28 @@ import RealityKitContent
 struct ContentView: View {
 
     var body: some View {
+	
         VStack {
-            Model3D(named: "Scene", bundle: realityKitContentBundle)
-                .padding(.bottom, 50)
+			  HStack{
+				  MenuView(selectedImmersionStyle: .constant(.mixed))
+					  .padding()
+				  VStack{
+					  Model3D(named: "Scene", bundle: realityKitContentBundle)
+							.padding(.bottom, 50)
 
-            Text("Hello, world!")
+					  Text("Welcome to Learning OS")
 
-            ToggleImmersiveSpaceButton()
-        }
-        .padding()
+					  ToggleImmersiveSpaceButton()
+				  }
+				  
+				 
+			  }//hstack-menuView
+			 .padding()
+			  
+			  }
+			  
+	
+           
     }
 }
 

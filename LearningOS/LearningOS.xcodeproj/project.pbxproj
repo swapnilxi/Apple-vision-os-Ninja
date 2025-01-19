@@ -3,16 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		15720EC92D204B8600769FA8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15720EC82D204B8600769FA8 /* HomeView.swift */; };
-		15ACA5F12D1F27C100EE2C43 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15ACA5F02D1F27C100EE2C43 /* MenuView.swift */; };
 		15B0F8372D1D505500FA8AD5 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 15B0F8362D1D505500FA8AD5 /* RealityKitContent */; };
 		15B0F8392D1D505500FA8AD5 /* LearningOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B0F8382D1D505500FA8AD5 /* LearningOSApp.swift */; };
 		15B0F83B2D1D505500FA8AD5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B0F83A2D1D505500FA8AD5 /* ContentView.swift */; };
-		15B0F83D2D1D505500FA8AD5 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B0F83C2D1D505500FA8AD5 /* AppModel.swift */; };
 		15B0F83F2D1D505500FA8AD5 /* ToggleImmersiveSpaceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B0F83E2D1D505500FA8AD5 /* ToggleImmersiveSpaceButton.swift */; };
 		15B0F8412D1D505500FA8AD5 /* ImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B0F8402D1D505500FA8AD5 /* ImmersiveView.swift */; };
 		15B0F8432D1D505700FA8AD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15B0F8422D1D505700FA8AD5 /* Assets.xcassets */; };
@@ -20,19 +17,55 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		15720EC82D204B8600769FA8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		15ACA5F02D1F27C100EE2C43 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		15B0F8312D1D505400FA8AD5 /* LearningOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15B0F8352D1D505500FA8AD5 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		15B0F8382D1D505500FA8AD5 /* LearningOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningOSApp.swift; sourceTree = "<group>"; };
 		15B0F83A2D1D505500FA8AD5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		15B0F83C2D1D505500FA8AD5 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 		15B0F83E2D1D505500FA8AD5 /* ToggleImmersiveSpaceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleImmersiveSpaceButton.swift; sourceTree = "<group>"; };
 		15B0F8402D1D505500FA8AD5 /* ImmersiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveView.swift; sourceTree = "<group>"; };
 		15B0F8422D1D505700FA8AD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15B0F8452D1D505700FA8AD5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		15B0F8472D1D505700FA8AD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		1565D8822D23E0D90071BD9E /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				AppModel.swift,
+				ViewModel.swift,
+			);
+			target = 15B0F8302D1D505400FA8AD5 /* LearningOS */;
+		};
+		158C7BEA2D2196FE000FF352 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Course/CourseFile.swift,
+				Course/CoursesView.swift,
+				HomeView.swift,
+				Learning/LearningView.swift,
+				Menu/MenuCard.swift,
+				Menu/MenuView.swift,
+				Teaching/CreatorView.swift,
+			);
+			target = 15B0F8302D1D505400FA8AD5 /* LearningOS */;
+		};
+		158F1E232D39877600801A27 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Module.swift,
+				Modules.swift,
+				TableOfContents.swift,
+			);
+			target = 15B0F8302D1D505400FA8AD5 /* LearningOS */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		1565D87F2D23E0C10071BD9E /* Model */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (1565D8822D23E0D90071BD9E /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Model; sourceTree = "<group>"; };
+		158C7BE72D2196FE000FF352 /* View */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (158C7BEA2D2196FE000FF352 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = View; sourceTree = "<group>"; };
+		158F1E222D39877500801A27 /* Module */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (158F1E232D39877600801A27 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Module; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		15B0F82E2D1D505400FA8AD5 /* Frameworks */ = {
@@ -46,15 +79,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		15720EC62D204B5000769FA8 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				15ACA5F02D1F27C100EE2C43 /* MenuView.swift */,
-				15720EC82D204B8600769FA8 /* HomeView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		15B0F8282D1D505400FA8AD5 = {
 			isa = PBXGroup;
 			children = (
@@ -75,15 +99,16 @@
 		15B0F8332D1D505400FA8AD5 /* LearningOS */ = {
 			isa = PBXGroup;
 			children = (
+				1565D87F2D23E0C10071BD9E /* Model */,
+				158C7BE72D2196FE000FF352 /* View */,
 				15B0F8382D1D505500FA8AD5 /* LearningOSApp.swift */,
 				15B0F83A2D1D505500FA8AD5 /* ContentView.swift */,
-				15720EC62D204B5000769FA8 /* View */,
-				15B0F83C2D1D505500FA8AD5 /* AppModel.swift */,
 				15B0F83E2D1D505500FA8AD5 /* ToggleImmersiveSpaceButton.swift */,
 				15B0F8402D1D505500FA8AD5 /* ImmersiveView.swift */,
 				15B0F8422D1D505700FA8AD5 /* Assets.xcassets */,
 				15B0F8472D1D505700FA8AD5 /* Info.plist */,
 				15B0F8442D1D505700FA8AD5 /* Preview Content */,
+				158F1E222D39877500801A27 /* Module */,
 			);
 			path = LearningOS;
 			sourceTree = "<group>";
@@ -178,11 +203,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				15B0F83F2D1D505500FA8AD5 /* ToggleImmersiveSpaceButton.swift in Sources */,
-				15720EC92D204B8600769FA8 /* HomeView.swift in Sources */,
-				15ACA5F12D1F27C100EE2C43 /* MenuView.swift in Sources */,
 				15B0F83B2D1D505500FA8AD5 /* ContentView.swift in Sources */,
 				15B0F8412D1D505500FA8AD5 /* ImmersiveView.swift in Sources */,
-				15B0F83D2D1D505500FA8AD5 /* AppModel.swift in Sources */,
 				15B0F8392D1D505500FA8AD5 /* LearningOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
