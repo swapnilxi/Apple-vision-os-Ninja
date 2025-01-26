@@ -1530,9 +1530,6 @@
         }
       }
     },
-    "Satellite1" : {
-      "comment" : "An object in orbit around Earth."
-    },
     "Scale" : {
       "comment" : "A slider control to change the scale of the satellite.\nThe scale the Earth is presented at.",
       "localizations" : {

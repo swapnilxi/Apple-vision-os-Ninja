@@ -11,10 +11,15 @@ import SwiftUI
 @Observable
 class ViewModel {
 	var navigationPath: [Module] = []
-	 /*
+	var titleText: String = ""
+	//Mark:- LinkedinView
+	var isShowingLinkedinView: Bool = false
+	var isShowingPortfolioView: Bool = false
+	var isShowingPersonalBrandingView: Bool = false
+	/*
 	 // MARK: - Navigation
 
-	 var titleText: String = ""
+
 	 var isTitleFinished: Bool = false
 	 var finalTitle: String = String(localized: "Hello World", comment: "The title of the app.")
 	 

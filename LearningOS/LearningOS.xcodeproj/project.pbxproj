@@ -42,6 +42,15 @@
 			membershipExceptions = (
 				Course/CourseFile.swift,
 				Course/CoursesView.swift,
+				Course/Linkedin/LinkedinModule.swift,
+				Course/Linkedin/LinkedinToggle.swift,
+				Course/Linkedin/LinkedinWindow.swift,
+				Course/personalBranding/PersonalBrandingImmersiveFull.swift,
+				Course/personalBranding/PersonalBrandingModule.swift,
+				Course/personalBranding/PersonalBrandingToggle.swift,
+				Course/Portfolio/PortfolioImmersiveMixed.swift,
+				Course/Portfolio/PortfolioModule.swift,
+				Course/Portfolio/PortfolioToggle.swift,
 				HomeView.swift,
 				Learning/LearningView.swift,
 				Menu/MenuCard.swift,
@@ -54,6 +63,7 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Module.swift,
+				ModuleDetail.swift,
 				Modules.swift,
 				TableOfContents.swift,
 			);

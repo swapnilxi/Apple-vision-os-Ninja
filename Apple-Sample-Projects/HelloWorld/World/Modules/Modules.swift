@@ -33,7 +33,7 @@ struct Modules: View {
                     }
             }
             .opacity(model.isShowingSolar ? 0 : 1)
-        }
+        }//:Zstack
         .animation(.default, value: model.isShowingSolar)
 
         // Close any open detail view when returning to the table of contents.
