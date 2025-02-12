@@ -62,11 +62,11 @@ enum Module: String, Identifiable, CaseIterable, Equatable {
 	var abstract: String {
 		 switch self {
 		 case .linkedin:
-			  String(localized: "A lot goes into making a day happen on Planet Earth! Discover how our globe turns and tilts to give us hot summer days, chilly autumn nights, and more.", comment: "Detail text explaining the Planet Earth module.")
+			  String(localized: "you can be a linkedin superstar in 21 days, sharing post to gaining interaction on linkedin ", comment: "Detail text explaining the Planet Earth module.")
 		 case .portfolio:
-			  String(localized: "Get up close with different types of orbits to learn more about how satellites and other objects move in space relative to the Earth.", comment: "Detail text explaining the Objects in Orbit module.")
+			  String(localized: "A page where people can know more about you and explore the facts and reach out to you for your future work.", comment: "Detail text explaining the Objects in Orbit module.")
 		 case .personalBranding:
-			  String(localized: "Take a trip to the solar system and watch how the Earth, Moon, and its satellites are in constant motion rotating around the Sun.", comment: "Detail text explaining the Solar System module.")
+			  String(localized: "Leverage your own story as brand, standout among the crowd show them how much value you can bring to them", comment: "Detail text explaining the Solar System module.")
 		 }
 	}
     

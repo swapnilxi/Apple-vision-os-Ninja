@@ -28,55 +28,53 @@
 		15B0F8472D1D505700FA8AD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
-<<<<<<< Updated upstream
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		1565D8822D23E0D90071BD9E /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				AppModel.swift,
-				ViewModel.swift,
-			);
-			target = 15B0F8302D1D505400FA8AD5 /* LearningOS */;
-		};
-		158C7BEA2D2196FE000FF352 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Course/CourseFile.swift,
-				Course/CoursesView.swift,
-				Course/LessonView/LessonView.swift,
-				Course/Linkedin/LinkedinModule.swift,
-				Course/Linkedin/LinkedinToggle.swift,
-				Course/Linkedin/LinkedinWindow.swift,
-				Course/personalBranding/PersonalBrandingImmersiveFull.swift,
-				Course/personalBranding/PersonalBrandingModule.swift,
-				Course/personalBranding/PersonalBrandingToggle.swift,
-				Course/Portfolio/PortfolioImmersiveMixed.swift,
-				Course/Portfolio/PortfolioModule.swift,
-				Course/Portfolio/PortfolioToggle.swift,
-				Creator/CreatorView.swift,
-				Creator/Teaching/TeachingView.swift,
-				HomeView.swift,
-				Learning/LearningView.swift,
-				Menu/MenuCard.swift,
-				Menu/MenuView.swift,
-				Modifiers/TypeTextModifier.swift,
-			);
-			target = 15B0F8302D1D505400FA8AD5 /* LearningOS */;
-		};
-		158F1E232D39877600801A27 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Module.swift,
-				ModuleCard.swift,
-				ModuleDetail.swift,
-				Modules.swift,
-				TableOfContents.swift,
-				TableOfContents1.swift,
-			);
-			target = 15B0F8302D1D505400FA8AD5 /* LearningOS */;
-		};
+1565D8822D23E0D90071BD9E /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+  isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+  membershipExceptions = (
+    AppModel.swift,
+    ViewModel.swift,
+  );
+  target = 15B0F8302D1D505400FA8AD5 /* LearningOS */;
+};
+158C7BEA2D2196FE000FF352 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+  isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+  membershipExceptions = (
+    Course/CourseFile.swift,
+    Course/CoursesView.swift,
+    Course/LessonView/LessonView.swift,
+    Course/Linkedin/LinkedinModule.swift,
+    Course/Linkedin/LinkedinToggle.swift,
+    Course/Linkedin/LinkedinWindow.swift,
+    Course/personalBranding/PersonalBrandingImmersiveFull.swift,
+    Course/personalBranding/PersonalBrandingModule.swift,
+    Course/personalBranding/PersonalBrandingToggle.swift,
+    Course/Portfolio/PortfolioImmersiveMixed.swift,
+    Course/Portfolio/PortfolioModule.swift,
+    Course/Portfolio/PortfolioToggle.swift,
+    Creator/CreatorView.swift,
+    Creator/Teaching/TeachingView.swift,
+    HomeView.swift,
+    Learning/LearningView.swift,
+    Menu/MenuCard.swift,
+    Menu/MenuView.swift,
+    Modifiers/TypeTextModifier.swift,
+  );
+  target = 15B0F8302D1D505400FA8AD5 /* LearningOS */;
+};
+158F1E232D39877600801A27 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+  isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+  membershipExceptions = (
+    Module.swift,
+    ModuleCard.swift,
+    ModuleDetail.swift,
+    Modules.swift,
+    TableOfContents.swift,
+    TableOfContents1.swift,
+  );
+  target = 15B0F8302D1D505400FA8AD5 /* LearningOS */;
+};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		1565D87F2D23E0C10071BD9E /* Model */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (1565D8822D23E0D90071BD9E /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Model; sourceTree = "<group>"; };
 		158C7BE72D2196FE000FF352 /* View */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (158C7BEA2D2196FE000FF352 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = View; sourceTree = "<group>"; };

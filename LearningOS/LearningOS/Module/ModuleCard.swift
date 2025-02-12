@@ -20,6 +20,7 @@ struct ModuleCard: View {
 					 VStack(alignment: .leading, spacing: 10) {
 						  Text(module.heading)
 								.font(.largeTitle)
+						 //abstract is text field talking short intor about the course
 						  Text(module.abstract)
 					 }
 				}
