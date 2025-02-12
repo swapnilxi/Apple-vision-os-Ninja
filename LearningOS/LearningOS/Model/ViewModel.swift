@@ -16,13 +16,13 @@ class ViewModel {
 	var isShowingLinkedinView: Bool = false
 	var isShowingPortfolioView: Bool = false
 	var isShowingPersonalBrandingView: Bool = false
-	/*
+	
 	 // MARK: - Navigation
 
 
 	 var isTitleFinished: Bool = false
-	 var finalTitle: String = String(localized: "Hello World", comment: "The title of the app.")
-	 
+	 var finalTitle: String = String(localized: "Hello Learning", comment: "The New way of Learning")
+	/*
 	 // MARK: - Course Data
 	 @Published var courses: [Course] = []
 	 @Published var selectedCourse: Course? = nil

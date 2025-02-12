@@ -32,7 +32,7 @@ enum Module: String, Identifiable, CaseIterable, Equatable {
 	}
 	
 	
-	
+	// I have replaced eyebrow with subtitle
 	var subTitle: String {
 		switch self {
 		case .linkedin:
@@ -45,6 +45,7 @@ enum Module: String, Identifiable, CaseIterable, Equatable {
 	}
 	
 	
+	
 	var overview: String {
 		 switch self {
 		 case .linkedin:
@@ -55,6 +56,17 @@ enum Module: String, Identifiable, CaseIterable, Equatable {
 			 
 		 case .personalBranding:
 			  String(localized: "Every 365¼ days, Earth and its satellites completely orbit the Sun — the star that anchors our solar system. It’s a journey of about 940 million kilometers a year!\n\nOn its journey, the Earth moves counter-clockwise in a slightly elliptical orbit. It travels a path called the ecliptic plane — an important part of how we navigate through our solar system.\n\nWant to explore Earth’s orbit in detail? Take a trip to the solar system and watch how Earth and its satellites move around the Sun.", comment: "Personal Branding text is immersive module, will show in personal Branding Module")
+		 }
+	}
+	
+	var abstract: String {
+		 switch self {
+		 case .linkedin:
+			  String(localized: "A lot goes into making a day happen on Planet Earth! Discover how our globe turns and tilts to give us hot summer days, chilly autumn nights, and more.", comment: "Detail text explaining the Planet Earth module.")
+		 case .portfolio:
+			  String(localized: "Get up close with different types of orbits to learn more about how satellites and other objects move in space relative to the Earth.", comment: "Detail text explaining the Objects in Orbit module.")
+		 case .personalBranding:
+			  String(localized: "Take a trip to the solar system and watch how the Earth, Moon, and its satellites are in constant motion rotating around the Sun.", comment: "Detail text explaining the Solar System module.")
 		 }
 	}
     
