@@ -8,11 +8,35 @@
 import SwiftUI
 
 struct PersonalBrandingToggle: View {
+	@Environment(ViewModel.self) private var model
+	@Environment(\.openImmersiveSpace) private var openImmersiveSpace
+	@Environment(\.dismissImmersiveSpace) private var dismissImmersiveSpace
+	
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+		 Button {
+			  Task {
+				  if model.isShowingPersonalBrandingView {
+						 await dismissImmersiveSpace()
+					} else {
+						await openImmersiveSpace(id: Module.personalBranding.name)
+					}
+			  }
+		 }label: {
+			 if model.isShowingPersonalBrandingView{
+				 Label(
+				 "exit the Personal Branding view",
+				 systemImage: "arrow.down.right.and.arrow.up.left"
+				 )
+			 }else{
+				 Text(Module.personalBranding.callToAction)
+			 }
+		 }
+		 
+		 
     }
 }
 
 #Preview {
     PersonalBrandingToggle()
+		.environment(ViewModel())
 }

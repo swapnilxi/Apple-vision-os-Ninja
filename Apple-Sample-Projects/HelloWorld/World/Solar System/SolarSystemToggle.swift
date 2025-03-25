@@ -31,6 +31,7 @@ struct SolarSystemToggle: View {
                 Text(Module.solar.callToAction)
             }
         }
+		 
     }
 }
 

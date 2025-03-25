@@ -12,16 +12,24 @@ import SwiftUI
 class ViewModel {
 	var navigationPath: [Module] = []
 	var titleText: String = ""
-	//Mark:- LinkedinView
-	var isShowingLinkedinView: Bool = false
-	var isShowingPortfolioView: Bool = false
-	var isShowingPersonalBrandingView: Bool = false
 	
 	 // MARK: - Navigation
-
-
 	 var isTitleFinished: Bool = false
 	 var finalTitle: String = String(localized: "Hello Learning", comment: "The New way of Learning")
+	
+	
+	//MARK: -COURSES-
+	//Mark:- LinkedinView
+	var isShowingLinkedinView: Bool = false
+
+
+	
+	//Mark:- PortFolio View
+	var isShowingPortfolioView: Bool = false
+
+	//Mark: Personal Branding View
+	var isShowingPersonalBrandingView: Bool = false
+
 	/*
 	 // MARK: - Course Data
 	 @Published var courses: [Course] = []

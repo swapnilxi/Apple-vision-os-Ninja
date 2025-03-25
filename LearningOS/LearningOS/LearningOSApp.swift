@@ -67,11 +67,15 @@ struct LearningOSApp: App {
 		  }
 		  .immersionStyle(selection: .constant(.progressive), in: .progressive)
 		 
+		 //COURSES-
 		 //model-viewModel
+		 // A volume that displays a Linkedin.
 		 WindowGroup(id: Module.linkedin.name)  {
 			 LinkedinWindow()
 					.environment(model)
 		 }
+		 .windowStyle(.volumetric)
+		 .defaultSize(width: 0.6, height: 0.6, depth: 0.6, in: .meters)
 		 
 		 ImmersiveSpace(id:Module.portfolio.name) {
 			 PortfolioImmersiveMixed()

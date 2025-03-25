@@ -59,6 +59,14 @@ enum Module: String, Identifiable, CaseIterable, Equatable {
 		 }
 	}
 	
+	var callToAction: String {
+		 switch self {
+		 case .linkedin: String(localized: "View Linkedin Course", comment: "An action the viewer can take in the Planet Earth module.")
+		 case .portfolio: String(localized: "View Portfolio", comment: "An action the viewer can take in the Objects in Orbit module.")
+		 case .personalBranding: String(localized: "View Personal Branding", comment: "An action the viewer can take in the Solar System module.")
+		 }
+	}
+	
 	var abstract: String {
 		 switch self {
 		 case .linkedin:
