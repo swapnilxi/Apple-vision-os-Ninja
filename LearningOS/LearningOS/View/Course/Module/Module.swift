@@ -32,7 +32,7 @@ enum Module: String, Identifiable, CaseIterable, Equatable {
 	}
 	
 	
-	
+	// I have replaced eyebrow with subtitle
 	var subTitle: String {
 		switch self {
 		case .linkedin:
@@ -45,6 +45,7 @@ enum Module: String, Identifiable, CaseIterable, Equatable {
 	}
 	
 	
+	
 	var overview: String {
 		 switch self {
 		 case .linkedin:
@@ -55,6 +56,25 @@ enum Module: String, Identifiable, CaseIterable, Equatable {
 			 
 		 case .personalBranding:
 			  String(localized: "Every 365¼ days, Earth and its satellites completely orbit the Sun — the star that anchors our solar system. It’s a journey of about 940 million kilometers a year!\n\nOn its journey, the Earth moves counter-clockwise in a slightly elliptical orbit. It travels a path called the ecliptic plane — an important part of how we navigate through our solar system.\n\nWant to explore Earth’s orbit in detail? Take a trip to the solar system and watch how Earth and its satellites move around the Sun.", comment: "Personal Branding text is immersive module, will show in personal Branding Module")
+		 }
+	}
+	
+	var callToAction: String {
+		 switch self {
+		 case .linkedin: String(localized: "View Linkedin Course", comment: "An action the viewer can take in the Planet Earth module.")
+		 case .portfolio: String(localized: "View Portfolio", comment: "An action the viewer can take in the Objects in Orbit module.")
+		 case .personalBranding: String(localized: "View Personal Branding", comment: "An action the viewer can take in the Solar System module.")
+		 }
+	}
+	
+	var abstract: String {
+		 switch self {
+		 case .linkedin:
+			  String(localized: "you can be a linkedin superstar in 21 days, sharing post to gaining interaction on linkedin ", comment: "Detail text explaining the Planet Earth module.")
+		 case .portfolio:
+			  String(localized: "A page where people can know more about you and explore the facts and reach out to you for your future work.", comment: "Detail text explaining the Objects in Orbit module.")
+		 case .personalBranding:
+			  String(localized: "Leverage your own story as brand, standout among the crowd show them how much value you can bring to them", comment: "Detail text explaining the Solar System module.")
 		 }
 	}
     

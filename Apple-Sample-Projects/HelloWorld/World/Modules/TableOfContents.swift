@@ -22,6 +22,7 @@ struct TableOfContents: View {
             Spacer(minLength: 120)
 
             VStack {
+					//Title
                 // A hidden version of the final text keeps the layout fixed
                 // while the overlaid visible version types on.
                 TitleText(title: model.finalTitle)
@@ -40,7 +41,8 @@ struct TableOfContents: View {
                 context[VerticalAlignment.top]
             }
             .padding(.bottom, 24)
-
+			  
+			  //content cards
             HStack(alignment: .top, spacing: 30) {
                 ForEach(Module.allCases) {
                     ModuleCard(module: $0)
@@ -56,7 +58,9 @@ struct TableOfContents: View {
             text: $model.titleText,
             finalText: model.finalTitle,
             isFinished: $model.isTitleFinished,
-            isAnimated: !model.isTitleFinished)
+            isAnimated: !model.isTitleFinished
+		  )
+		 
         .background(alignment: Alignment(horizontal: .center, vertical: .earthGuide)) {
             Image("EarthHalf")
                 .alignmentGuide(.earthGuide) { context in

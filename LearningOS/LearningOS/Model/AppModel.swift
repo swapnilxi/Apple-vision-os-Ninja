@@ -18,4 +18,15 @@ class AppModel {
 		  case open
 	 }
 	 var immersiveSpaceState = ImmersiveSpaceState.closed
+	 var currentSpaceID: String?  
+	// Use separate queue for thread-safe mutations
+		 private let accessQueue = DispatchQueue(label: "AppModelAccessQueue")
+		 
+	func updateState(_ newState: ImmersiveSpaceState, spaceID: String?) {
+		accessQueue.sync {
+			self.immersiveSpaceState = newState
+			self.currentSpaceID = spaceID
+		}
+	}
+	
 }

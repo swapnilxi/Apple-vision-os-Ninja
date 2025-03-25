@@ -42,30 +42,35 @@
 			membershipExceptions = (
 				Course/CourseFile.swift,
 				Course/CoursesView.swift,
+				Course/LessonView/LessonView.swift,
+				Course/Linkedin/Linkedin.swift,
 				Course/Linkedin/LinkedinModule.swift,
 				Course/Linkedin/LinkedinToggle.swift,
 				Course/Linkedin/LinkedinWindow.swift,
+				Course/Module/Module.swift,
+				Course/Module/ModuleCard.swift,
+				Course/Module/ModuleDetail.swift,
+				Course/Module/Modules.swift,
+				Course/Module/TableOfContents.swift,
+				Course/Module/TableOfContents1.swift,
+				Course/personalBranding/PersonalBranding.swift,
 				Course/personalBranding/PersonalBrandingImmersiveFull.swift,
 				Course/personalBranding/PersonalBrandingModule.swift,
 				Course/personalBranding/PersonalBrandingToggle.swift,
+				Course/Portfolio/Portfolio.swift,
 				Course/Portfolio/PortfolioImmersiveMixed.swift,
 				Course/Portfolio/PortfolioModule.swift,
 				Course/Portfolio/PortfolioToggle.swift,
+				Course/RealityViews/Linkedin3D.swift,
+				Course/RealityViews/PersonalBranding3D.swift,
+				Course/RealityViews/Portfolio3D.swift,
+				Creator/CreatorView.swift,
+				Creator/Teaching/TeachingView.swift,
 				HomeView.swift,
 				Learning/LearningView.swift,
 				Menu/MenuCard.swift,
 				Menu/MenuView.swift,
-				Teaching/CreatorView.swift,
-			);
-			target = 15B0F8302D1D505400FA8AD5 /* LearningOS */;
-		};
-		158F1E232D39877600801A27 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Module.swift,
-				ModuleDetail.swift,
-				Modules.swift,
-				TableOfContents.swift,
+				Modifiers/TypeTextModifier.swift,
 			);
 			target = 15B0F8302D1D505400FA8AD5 /* LearningOS */;
 		};
@@ -74,7 +79,6 @@
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		1565D87F2D23E0C10071BD9E /* Model */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (1565D8822D23E0D90071BD9E /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Model; sourceTree = "<group>"; };
 		158C7BE72D2196FE000FF352 /* View */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (158C7BEA2D2196FE000FF352 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = View; sourceTree = "<group>"; };
-		158F1E222D39877500801A27 /* Module */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (158F1E232D39877600801A27 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Module; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +122,6 @@
 				15B0F8422D1D505700FA8AD5 /* Assets.xcassets */,
 				15B0F8472D1D505700FA8AD5 /* Info.plist */,
 				15B0F8442D1D505700FA8AD5 /* Preview Content */,
-				158F1E222D39877500801A27 /* Module */,
 			);
 			path = LearningOS;
 			sourceTree = "<group>";

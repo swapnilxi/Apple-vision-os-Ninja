@@ -47,4 +47,5 @@ struct CourseFile: View {
 
 #Preview {
     CourseFile()
+		.environment(ViewModel())
 }

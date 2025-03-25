@@ -36,6 +36,7 @@ struct MenuView: View {
 	@Environment(\.openImmersiveSpace) private var openImmersiveSpace
 	@Environment(\.dismissImmersiveSpace) private var dismissImmersiveSpace
 	@Binding var selectedImmersionStyle: ImmersionStyle
+	@Environment(AppModel.self) private var appModel
 	
 	var body: some View {
 		HStack(spacing: 20) {
@@ -46,11 +47,12 @@ struct MenuView: View {
 			ForEach(menuItems) { item in
 				Button(action: {
 					Task {
-						await openSpace(id: item.viewID)
+						await toggleSpace(for: item.viewID)
 					}
 				}
 						 , label:{
 					MenuCard(item: item)
+						.opacity(appModel.immersiveSpaceState == .inTransition ? 0.5 : 1)
 				})
 				
 			}
@@ -59,22 +61,41 @@ struct MenuView: View {
 		
 	}
 	
-	func openSpace(id: String) async {
-		 
-		 //dismiss any open immersive space first
-		 await dismissImmersiveSpace()
-		 
-		 switch await openImmersiveSpace(id: id) {
-		 case .opened:
-			  print("Immersive space \(id) successfully opened")
-		 case .error:
-			  fatalError("Error opening immersive space with id: \(id)")
-		 case .userCancelled:
-			  print("User cancelled")
-		 default:
-			  break
+	private func toggleSpace(for id: String) async {
+			  if appModel.currentSpaceID == id {
+					await dismissSpace()
+			  } else {
+					await openSpace(id: id)
+			  }
 		 }
-	}
+	
+	private func openSpace(id: String) async {
+			 guard appModel.immersiveSpaceState != .inTransition else { return }
+			 
+			 appModel.updateState(.inTransition, spaceID: nil)
+			 
+			 do {
+				  // Close any existing space first
+				  await dismissSpace()
+				  
+				  switch await openImmersiveSpace(id: id) {
+				  case .opened:
+						appModel.updateState(.open, spaceID: id)
+				  case .error, .userCancelled:
+						appModel.updateState(.closed, spaceID: nil)
+				  @unknown default:
+						appModel.updateState(.closed, spaceID: nil)
+				  }
+			 }
+		}
+	private func dismissSpace() async {
+			 guard appModel.immersiveSpaceState != .inTransition else { return }
+			 
+			 appModel.updateState(.inTransition, spaceID: nil)
+			 
+			 await dismissImmersiveSpace()
+			 appModel.updateState(.closed, spaceID: nil)
+		}
 	
 }
 
@@ -83,6 +104,7 @@ struct MenuView: View {
 
 #Preview {
 	 MenuView(selectedImmersionStyle: .constant(.mixed))
+		.environment(ViewModel())
 }
 
 
