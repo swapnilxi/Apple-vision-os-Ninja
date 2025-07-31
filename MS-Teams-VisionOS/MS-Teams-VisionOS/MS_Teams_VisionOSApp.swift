@@ -9,8 +9,8 @@ import SwiftUI
 
 @main
 struct MS_Teams_VisionOSApp: App {
-
     @State private var appModel = AppModel()
+    @State private var isImmersiveActive = false
 
     var body: some Scene {
         WindowGroup {
@@ -19,15 +19,20 @@ struct MS_Teams_VisionOSApp: App {
         }
         .windowStyle(.volumetric)
 
+        // ImmersiveSpace block is a peer to WindowGroup, not nested inside it
         ImmersiveSpace(id: appModel.immersiveSpaceID) {
-            ImmersiveView()
-                .environment(appModel)
-                .onAppear {
-                    appModel.immersiveSpaceState = .open
-                }
-                .onDisappear {
-                    appModel.immersiveSpaceState = .closed
-                }
+            ImmersiveView(exitImmersive: {
+                // This closure will exit immersive space
+                isImmersiveActive = false
+                appModel.immersiveSpaceState = .closed
+            })
+            .environment(appModel)
+            .onAppear {
+                appModel.immersiveSpaceState = .open
+            }
+            .onDisappear {
+                appModel.immersiveSpaceState = .closed
+            }
         }
         .immersionStyle(selection: .constant(.progressive), in: .progressive)
     }

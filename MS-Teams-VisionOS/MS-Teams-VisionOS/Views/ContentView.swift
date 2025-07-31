@@ -1,53 +1,36 @@
-//
-//  ContentView.swift
-//  MS-Teams-VisionOS
-//
-//  Created by swapnil on 7/25/25.
-//
-
 import SwiftUI
-import RealityKit
-import RealityKitContent
 
 struct ContentView: View {
-
-    @State private var enlarge = false
+    @State private var isImmersive = false
+    // Optionally, track which sidebar button is active
+    @State private var selectedSidebar: SidebarSection? = .meetings
 
     var body: some View {
-        RealityView { content in
-            // Add the initial RealityKit content
-            if let scene = try? await Entity(named: "Scene", in: realityKitContentBundle) {
-                content.add(scene)
-            }
-        } update: { content in
-            // Update the RealityKit content when SwiftUI state changes
-            if let scene = content.entities.first {
-                let uniformScale: Float = enlarge ? 1.4 : 1.0
-                scene.transform.scale = [uniformScale, uniformScale, uniformScale]
-            }
-        }
-        .gesture(TapGesture().targetedToAnyEntity().onEnded { _ in
-            enlarge.toggle()
-        })
-        .toolbar {
-            ToolbarItemGroup(placement: .bottomOrnament) {
-                VStack (spacing: 12) {
-                    Button {
-                        enlarge.toggle()
-                    } label: {
-                        Text(enlarge ? "Reduce RealityView Content" : "Enlarge RealityView Content")
+        if isImmersive {
+            ImmersiveView(exitImmersive: { self.isImmersive = false })
+        } else {
+            HStack(spacing: 0) {
+                SidebarView(
+                    selectedSidebar: $selectedSidebar,
+                    onEnterImmersive: {
+                        // Trigger immersive mode here, e.g.
+                        isImmersive = true
                     }
-                    .animation(.none, value: 0)
-                    .fontWeight(.semibold)
-
-                    ToggleImmersiveSpaceButton()
-                }
+                )
+                    .frame(width: 180)
+                    .background(Color.gray.opacity(0.08))
+                Divider()
+                MainAreaView(
+                    selectedSidebar: selectedSidebar,
+                    enterImmersive: { self.isImmersive = true }
+                )
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
             }
         }
+        
     }
 }
 
-#Preview(windowStyle: .volumetric) {
-    ContentView()
-        .environment(AppModel())
-}
+
+
+
