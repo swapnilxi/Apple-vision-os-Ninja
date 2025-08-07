@@ -16,6 +16,7 @@ struct MultimodalRAGView: View {
                 .font(.body)
             // Add your search input, file picker, and chat UI here
             Spacer()
+            ChatUI()
         }
         .padding()
     }

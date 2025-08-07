@@ -10,21 +10,26 @@ import RealityKit
 import RealityKitContent
 
 struct ContentView: View {
-
     var body: some View {
-        VStack {
-            Model3D(named: "Scene", bundle: realityKitContentBundle)
-                .padding(.bottom, 50)
-
-            Text("Hello, world!")
-
-            ToggleImmersiveSpaceButton()
+        RealityView { content in
+            let sphere = ModelEntity(mesh: .generateSphere(radius: 0.01))
+            sphere.name = "fingerTipSphere"
+            sphere.model?.materials = [SimpleMaterial(color: .red, isMetallic: false)]
+            
+            let anchor = AnchorEntity()
+            anchor.addChild(sphere)
+            content.add(anchor)
+        } update: { content in
+            if let hand = InputDevice.hand(),
+               let indexTip = hand.pose(for: .indexFingerTip)?.position {
+                if let entity = content.entities.first(where: { $0.name == "fingerTipSphere" }) {
+                    entity.position = indexTip
+                }
+            }
         }
-        .padding()
     }
 }
 
-#Preview(windowStyle: .automatic) {
+#Preview(windowStyle: .volumetric) {
     ContentView()
-        .environment(AppModel())
 }
