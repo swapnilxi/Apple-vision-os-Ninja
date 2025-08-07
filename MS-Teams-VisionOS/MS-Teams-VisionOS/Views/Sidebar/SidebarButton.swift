@@ -37,4 +37,5 @@ enum SidebarSection: String {
     case chats = "Chats"
     case files = "Files"
     case aiAgents = "AI Agents"
+    case multimodalRAG = "Multimodal RAG"
 }

@@ -58,6 +58,12 @@ struct SidebarView: View {
                 isSelected: selectedSidebar == .aiAgents,
                 action: { selectedSidebar = .aiAgents }
             )
+            SidebarButton(
+                iconName: "sparkle.magnifyingglass", // Or pick another SF Symbol
+                label: "Multimodal RAG",
+                isSelected: selectedSidebar == .multimodalRAG,
+                action: { selectedSidebar = .multimodalRAG }
+            )
 
             Spacer()
         }
