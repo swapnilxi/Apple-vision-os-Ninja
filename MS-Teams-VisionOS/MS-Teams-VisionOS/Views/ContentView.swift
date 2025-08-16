@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @Environment(AppModel.self) private var appModel
     @State private var isImmersive = false
     // Optionally, track which sidebar button is active
     @State private var selectedSidebar: SidebarSection? = .meetings

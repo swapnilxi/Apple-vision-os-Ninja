@@ -7,6 +7,7 @@
 import SwiftUI
 
 struct MainAreaView: View {
+    @Environment(AppModel.self) private var appModel
     let selectedSidebar: SidebarSection?
     let enterImmersive: () -> Void
 
