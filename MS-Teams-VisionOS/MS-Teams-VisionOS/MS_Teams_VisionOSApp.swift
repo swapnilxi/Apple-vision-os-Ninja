@@ -24,6 +24,7 @@ struct MS_Teams_VisionOSApp: App {
         // Register a dummy volumetric window to satisfy system requirements.
         WindowGroup(id: "volumeScene") {
             ContentView()
+                .environment(appModel)
         }
         .windowStyle(.volumetric)
         .defaultSize(width: 700, height: 900, depth: 1)
